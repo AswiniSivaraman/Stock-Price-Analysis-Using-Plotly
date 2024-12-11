@@ -2,6 +2,12 @@
 
 This project leverages **Plotly** for interactive data visualization to analyze the stock performance of five major companies from the NSE website: **SBI**, **HDFC**, **ICICI**, **AXIS**, and **KOTAK**.
 
+## Data Collection
+Stock data was fetched using the **yfinance** library, which provides a convenient interface to download historical stock market data directly from Yahoo Finance. Key steps included:
+- Specifying the stock ticker symbols for each company (e.g., `SBIN.NS` for SBI, `HDFC.NS` for HDFC, etc.).
+- Using `yfinance.download()` to fetch historical data for specified time ranges.
+- Saving the data into individual **Pandas** DataFrames for further preprocessing and analysis.
+
 ## Data Cleaning
 The raw stock data was cleaned and preprocessed using **Pandas** to ensure accuracy and consistency. Key steps included:
 - **Data Type Conversion**: The `Date` column was converted to `datetime` format for easy time-based operations.
@@ -40,6 +46,7 @@ A grouped bar chart compares the average closing prices for weekdays across mult
 - **Python**: Core programming language for data analysis and visualization.
 - **Pandas**: For efficient data preprocessing and cleaning.
 - **Plotly**: For creating interactive, animated, and professional-grade visualizations.
+- **yfinance**: For fetching historical stock data from Yahoo Finance.
 
 ## Future Scope
 
